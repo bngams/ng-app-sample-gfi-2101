@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  adminUrl: 'http://localhost:4220'
+  adminUrl: 'http://localhost:4220',
+  wsUrl: 'https://jsonplaceholder.typicode.com',
 };
 
 /*

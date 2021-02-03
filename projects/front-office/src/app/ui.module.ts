@@ -8,6 +8,9 @@ const MATERIAL_MODULES = [
   // ...
 ];
 
+/**
+ * This class exports all material necessary features
+ */
 @NgModule({
   exports: [
     ...MATERIAL_MODULES

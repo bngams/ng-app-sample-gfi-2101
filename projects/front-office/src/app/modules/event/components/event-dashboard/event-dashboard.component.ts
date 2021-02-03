@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventService } from '../../services/event.service';
+import { RXDemoService } from '../../services/rxdemo.service';
 
 @Component({
   selector: 'fo-event-dashboard',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventDashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private rxdemoService: RXDemoService,
+  ) { }
 
   ngOnInit(): void {
+    this.observableDemo();
+  }
+
+  observableDemo(): void {
+    this.rxdemoService.firstObservable();
   }
 
 }

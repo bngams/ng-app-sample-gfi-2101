@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UIModule } from './ui.module';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   // fonctionnalités liées au HTML
@@ -27,7 +28,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    UIModule
+    UIModule,
+    HttpClientModule
   ],
   // Gestionnaires de la DI <=> ContextContainers
   providers: [
