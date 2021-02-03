@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'front-office';
 
   // <portee> nom: <type>
-  constructor(private utilsService: UtilsService) {
+  constructor(public utilsService: UtilsService) {
   }
 
   // lifecyclehooks

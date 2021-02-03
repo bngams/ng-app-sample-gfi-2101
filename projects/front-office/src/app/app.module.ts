@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/layout/header.component';
 import { VATPipePipe } from './pipes/vatpipe.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UIModule } from './ui.module';
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   // fonctionnalités liées au HTML
@@ -17,6 +19,8 @@ import { UIModule } from './ui.module';
     TemplateSyntaxComponent,
     HeaderComponent,
     VATPipePipe,
+    HomeComponent,
+    NotFoundComponent,
   ],
   // fonctionnalités qui proviennent d'autres modules
   imports: [
@@ -26,8 +30,10 @@ import { UIModule } from './ui.module';
     UIModule
   ],
   // Gestionnaires de la DI <=> ContextContainers
-  providers: [],
+  providers: [
+  ],
   // mis à disposition au démarrage
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
