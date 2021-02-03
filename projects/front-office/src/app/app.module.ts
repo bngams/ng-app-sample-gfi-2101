@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TemplateSyntaxComponent } from './components/template-syntax/template-syntax.component';
 import { HeaderComponent } from './components/layout/header.component';
 import { VATPipePipe } from './pipes/vatpipe.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UIModule } from './ui.module';
 
 @NgModule({
   // fonctionnalités liées au HTML
@@ -19,7 +21,9 @@ import { VATPipePipe } from './pipes/vatpipe.pipe';
   // fonctionnalités qui proviennent d'autres modules
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    UIModule
   ],
   // Gestionnaires de la DI <=> ContextContainers
   providers: [],

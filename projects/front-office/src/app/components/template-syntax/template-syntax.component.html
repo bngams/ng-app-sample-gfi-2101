@@ -24,13 +24,13 @@
 <p>my pipe: VAT for 10 => {{ 10 | vat:0.20 }}</p>
 
 <!-- event binding ( ) -->
-<button (click)="buttonClicked($event)">My Button</button>
+<button mat-raised-button [color]="'primary'" (click)="buttonClicked($event)">My Button</button>
 
 <!-- event binding ( ) -->
-<button (click)="toggleDisabled(dynamicButton)">My toggle button</button>
+<button mat-raised-button color="primary" class="ml-3" (click)="toggleDisabled(dynamicButton)">My toggle button</button>
 
 <!-- property binding [ ] - [attr.customAttribute]-->
-<button [disabled]="isDisabled" #dynamicButton>My disabled button</button>
+<button mat-raised-button color="accent" class="ml-3" [disabled]="isDisabled" #dynamicButton>My disabled button</button>
 {{ dynamicButton }}
 
 <!-- double binding -->

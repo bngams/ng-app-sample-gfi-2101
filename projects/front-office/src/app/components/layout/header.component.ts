@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'fo-header',
   template: `
-    <p>
-      header works!
-    </p>
+    <mat-toolbar color="primary">
+      <span>My app</span>
+    </mat-toolbar>
   `,
   styles: [`
   `],
